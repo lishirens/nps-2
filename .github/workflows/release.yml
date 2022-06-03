@@ -11,8 +11,8 @@ on:
       - '**.go'
       - '**.yml'
       - 'web/views/**'
-  schedule:   #打开计划时，修改以上类型的文件时，不会触发actions
-    - cron: 0 16 * * 5    
+  #schedule:   #打开计划时，修改以上类型的文件时，不会触发actions
+  #  - cron: 0 16 * * 5    
 
 jobs:
   build_assets:
