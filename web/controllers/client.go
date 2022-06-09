@@ -102,6 +102,8 @@ func (s *ClientController) Edit() {
 		s.Data["menu"] = "client"
 		if c, err := file.GetDb().GetClient(id); err != nil {
 			s.error()
+			s.AjaxErr("client ID not found")
+			return
 		} else {
 			s.Data["c"] = c
 		}
