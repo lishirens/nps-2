@@ -94,15 +94,15 @@
         },
         //表格的列
         columns: [
-            {
-                field: 'Id',//域值
-                title: '<span langtag="word-clientid"></span>',//标题
-                halign: 'center',
-                visible: true,//false表示不显示
-                formatter: function (value, row, index) {
-                    return row.Client.Id
-                }
-            },
+            // {
+            //     field: 'sId',//域值
+            //     title: '<span langtag="word-clientid"></span>',//标题
+            //     halign: 'center',
+            //     visible: true,//false表示不显示
+            //     formatter: function (value, row, index) {
+            //         return row.Client.Id
+            //     }
+            // },
             {
                 field: 'Id',//域值
                 title: '<span langtag="word-id"></span>',//标题
@@ -110,6 +110,15 @@
                 visible: true,//false表示不显示
                 sortable: true,//启用排序
       
+            },
+            {
+                field: 'sName',//域值
+                title: '<span langtag="word-belongclient"></span>',//标题
+                halign: 'center',
+                visible: true,//false表示不显示
+                formatter: function (value, row, index) {
+                    return row.Client.Remark
+                }
             },
             {
                 field: 'Remark',//域值
