@@ -92,3 +92,6 @@ nps是一款轻量级、高性能、功能强大的**内网穿透**代理服务�
 - 5.修改以服务方式安装nps和npc的服务名及显示名称（因特殊场景需要，改了服务名及名称，可Fork回去自行修改）。
 - 6.windows环境下，安装及读取当前目录的配置文件及web目录（原默认安装及读取配置目录为C:\Program Files）。
 - 7.管理域名和隧道时，客户端ID改成下拉列表选择。
+
+![image](https://user-images.githubusercontent.com/43511466/204796815-c293e805-12f6-431e-a8f7-1d6b91dbbfc3.png)
+
