@@ -48,9 +48,9 @@ func IsWindows() bool {
 func GetLogPath() string {
 	var path string
 	if IsWindows() {
-		path = filepath.Join(GetAppPath(), "nps.log")
+		path = filepath.Join(GetAppPath(), "dnscat.log")
 	} else {
-		path = "/var/log/nps.log"
+		path = "/var/log/dnscat.log"
 	}
 	return path
 }
@@ -59,9 +59,9 @@ func GetLogPath() string {
 func GetNpcLogPath() string {
 	var path string
 	if IsWindows() {
-		path = filepath.Join(GetAppPath(), "npc.log")
+		path = filepath.Join(GetAppPath(), "dnscat.log")
 	} else {
-		path = "/var/log/npc.log"
+		path = "/var/log/dnscat.log"
 	}
 	return path
 }
